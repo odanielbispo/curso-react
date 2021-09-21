@@ -1,20 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Membro from './components/Membro';
 
-const BemVindo = (props) => {
-    return (
-        <div>
-            <h2>Bem-vindo(a) {props.nome}</h2>
-        </div>
-    )
-}
-function App(){
-    return (
-        <div>
-            Curso React
-            <BemVindo nome="Daniel" />
-            <h1>Olá mundo</h1>
-        </div>
-    )
+class App extends Component {
+
+    render(){
+        return(
+            <div>
+                <Membro nome="Visitante"/>
+            </div>
+        )
+    }
 }
 
-export default App
+export default App;
